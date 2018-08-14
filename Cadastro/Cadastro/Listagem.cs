@@ -79,7 +79,7 @@ namespace Cadastro
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             CheckBLL check = new CheckBLL();
             dvgClientes.DataSource = check.listar2(txtConsulRazao.Text);
         }
@@ -87,6 +87,17 @@ namespace Cadastro
         private void bntSair_Click(object sender, EventArgs e)
         {
             this.Close();
-        }       
+        }
+
+        private void txtConsulRazao_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if(e.KeyData == Keys.Enter)
+            {
+                CheckBLL check = new CheckBLL();
+                dvgClientes.DataSource = check.listar2(txtConsulRazao.Text);
+            }
+            
+        }
     }
 }
