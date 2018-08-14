@@ -141,6 +141,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\if_fax__print__printer__computer__2568276 %282%291.png" />
+    <None Include="Resources\if_edit-clear_232271.ico" />
     <None Include="Resources\if_DeleteRed_34218.ico" />
     <None Include="Resources\if_Save_70652.ico" />
     <None Include="Resources\MinhaImg.png" />

@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listagem));
             this.dvgClientes = new System.Windows.Forms.DataGridView();
-            this.bntImprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.bntConsulta = new System.Windows.Forms.Button();
             this.txtConsulRazao = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bntSair = new System.Windows.Forms.Button();
             this.lsvClientes = new System.Windows.Forms.ListView();
             this.ColCodigo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColRazaoSocial = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColEndereco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.bntSair = new System.Windows.Forms.Button();
+            this.bntConsulta = new System.Windows.Forms.Button();
+            this.bntImprimir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvgClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,23 +52,10 @@
             this.dvgClientes.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dvgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgClientes.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dvgClientes.Location = new System.Drawing.Point(14, 217);
+            this.dvgClientes.Location = new System.Drawing.Point(14, 267);
             this.dvgClientes.Name = "dvgClientes";
-            this.dvgClientes.Size = new System.Drawing.Size(633, 200);
+            this.dvgClientes.Size = new System.Drawing.Size(633, 150);
             this.dvgClientes.TabIndex = 0;
-            // 
-            // bntImprimir
-            // 
-            this.bntImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bntImprimir.Image = global::Cadastro.Properties.Resources.if_BT_printer_905556__1_;
-            this.bntImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bntImprimir.Location = new System.Drawing.Point(378, 40);
-            this.bntImprimir.Name = "bntImprimir";
-            this.bntImprimir.Size = new System.Drawing.Size(120, 39);
-            this.bntImprimir.TabIndex = 1;
-            this.bntImprimir.Text = "Imprimir           ";
-            this.bntImprimir.UseVisualStyleBackColor = true;
-            this.bntImprimir.Click += new System.EventHandler(this.bntImprimir_Click);
             // 
             // printDocument1
             // 
@@ -90,22 +77,10 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // bntConsulta
-            // 
-            this.bntConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntConsulta.BackgroundImage")));
-            this.bntConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bntConsulta.Location = new System.Drawing.Point(465, 7);
-            this.bntConsulta.Name = "bntConsulta";
-            this.bntConsulta.Size = new System.Drawing.Size(87, 27);
-            this.bntConsulta.TabIndex = 19;
-            this.bntConsulta.Text = "    Consultar";
-            this.bntConsulta.UseVisualStyleBackColor = true;
-            this.bntConsulta.Click += new System.EventHandler(this.button1_Click);
-            // 
             // txtConsulRazao
             // 
             this.txtConsulRazao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtConsulRazao.Location = new System.Drawing.Point(342, 9);
+            this.txtConsulRazao.Location = new System.Drawing.Point(162, 94);
             this.txtConsulRazao.Name = "txtConsulRazao";
             this.txtConsulRazao.Size = new System.Drawing.Size(116, 21);
             this.txtConsulRazao.TabIndex = 20;
@@ -115,23 +90,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(184, 12);
+            this.label2.Location = new System.Drawing.Point(4, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 15);
             this.label2.TabIndex = 21;
             this.label2.Text = "Consulta por Razao Social";
-            // 
-            // bntSair
-            // 
-            this.bntSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntSair.BackgroundImage")));
-            this.bntSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bntSair.Location = new System.Drawing.Point(560, 6);
-            this.bntSair.Name = "bntSair";
-            this.bntSair.Size = new System.Drawing.Size(87, 27);
-            this.bntSair.TabIndex = 22;
-            this.bntSair.Text = "Sair";
-            this.bntSair.UseVisualStyleBackColor = true;
-            this.bntSair.Click += new System.EventHandler(this.bntSair_Click);
             // 
             // lsvClientes
             // 
@@ -143,10 +106,10 @@
             this.lsvClientes.Cursor = System.Windows.Forms.Cursors.Default;
             this.lsvClientes.FullRowSelect = true;
             this.lsvClientes.GridLines = true;
-            this.lsvClientes.Location = new System.Drawing.Point(14, 95);
+            this.lsvClientes.Location = new System.Drawing.Point(7, 128);
             this.lsvClientes.Name = "lsvClientes";
             this.lsvClientes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lsvClientes.Size = new System.Drawing.Size(633, 115);
+            this.lsvClientes.Size = new System.Drawing.Size(633, 133);
             this.lsvClientes.TabIndex = 24;
             this.lsvClientes.UseCompatibleStateImageBehavior = false;
             this.lsvClientes.View = System.Windows.Forms.View.Details;
@@ -165,6 +128,43 @@
             // 
             this.ColEndereco.Text = "Endereço";
             this.ColEndereco.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // bntSair
+            // 
+            this.bntSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntSair.BackgroundImage")));
+            this.bntSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bntSair.Location = new System.Drawing.Point(377, 88);
+            this.bntSair.Name = "bntSair";
+            this.bntSair.Size = new System.Drawing.Size(87, 27);
+            this.bntSair.TabIndex = 22;
+            this.bntSair.Text = "Sair";
+            this.bntSair.UseVisualStyleBackColor = true;
+            this.bntSair.Click += new System.EventHandler(this.bntSair_Click);
+            // 
+            // bntConsulta
+            // 
+            this.bntConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntConsulta.BackgroundImage")));
+            this.bntConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bntConsulta.Location = new System.Drawing.Point(284, 88);
+            this.bntConsulta.Name = "bntConsulta";
+            this.bntConsulta.Size = new System.Drawing.Size(87, 27);
+            this.bntConsulta.TabIndex = 19;
+            this.bntConsulta.Text = "    Consultar";
+            this.bntConsulta.UseVisualStyleBackColor = true;
+            this.bntConsulta.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bntImprimir
+            // 
+            this.bntImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bntImprimir.Image = global::Cadastro.Properties.Resources.if_BT_printer_905556__1_;
+            this.bntImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bntImprimir.Location = new System.Drawing.Point(520, 82);
+            this.bntImprimir.Name = "bntImprimir";
+            this.bntImprimir.Size = new System.Drawing.Size(120, 39);
+            this.bntImprimir.TabIndex = 1;
+            this.bntImprimir.Text = "Imprimir           ";
+            this.bntImprimir.UseVisualStyleBackColor = true;
+            this.bntImprimir.Click += new System.EventHandler(this.bntImprimir_Click);
             // 
             // Listagem
             // 

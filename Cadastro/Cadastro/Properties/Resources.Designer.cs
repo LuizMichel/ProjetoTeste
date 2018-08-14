@@ -203,6 +203,16 @@ namespace Cadastro.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_edit_clear_23227 {
+            get {
+                object obj = ResourceManager.GetObject("if_edit-clear_23227", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_fax__print__printer__computer__2568276 {
             get {
                 object obj = ResourceManager.GetObject("if_fax__print__printer__computer__2568276", resourceCulture);
@@ -216,6 +226,16 @@ namespace Cadastro.Properties {
         internal static System.Drawing.Bitmap if_fax__print__printer__computer__2568276__2_ {
             get {
                 object obj = ResourceManager.GetObject("if_fax__print__printer__computer__2568276 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_fax__print__printer__computer__2568276__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("if_fax__print__printer__computer__2568276 (2)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
